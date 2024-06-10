@@ -1,0 +1,31 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+.custom-bg {
+    background-color: #00265c; 
+}
+
+.muroAzul {
+    display: flex;
+    background-color: #00193B;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.muroAzul section {
+    color: white;
+    font-size: xx-large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #00193B;
+    transform: scale(0.9);
+    transition: 0.9s;
+}
+
