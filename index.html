@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Blue Rental | Inicio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/indexStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -23,7 +23,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="assets/img/logonav.png" alt="" width="150" height="150"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logonav.png" alt="" width="150"
+                        height="150"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
                     aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,8 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarColor03">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio
-                                <span class="visually-hidden">(current)</span>
+                            <a class="nav-link active" href="index.html">Inicio
                             </a>
                         </li>
                         <li class="nav-item">
@@ -45,20 +45,94 @@
                             <a class="nav-link" href="#">Quienes Somos</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-custom mx-1">Registrarse</button>
-                    <button class="btn btn-outline-custom mx-3">Iniciar Sesión</button>
+                    <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1">
+                        Registrarse
+                    </button>
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Registro</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form id="registerForm" class="accessForm">
+                                            <h2>Register you user</h2>
+
+                                            <input placeholder="username" type="text" name="username" />
+                                            <input placeholder="email" type="email" name="email" />
+                                            <div>
+                                                <input type="checkbox" name="check" />
+                                                <span>Aceptar los terminos y condiciones</span>
+                                            </div>
+
+                                            <input placeholder="password" type="password" name="password" />
+                                            <input placeholder="confirm password" type="password" name="confirm-password" />
+                                            <span id="error"> </span>
+
+                                            <button type="submit">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop2">
+                        Inicio Sesión
+                    </button>
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Inicio Sesión</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form id="accessForm" class="accessForm">
+                                            <h2>Login</h2>
+
+                                            <input placeholder="username" type="text" name="username" />
+
+                                            <input placeholder="password" type="password" name="password" />
+
+                                            <button type="submit">Login</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Salir</button>
+                                    <button type="button" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <form class="d-flex me-5">
-                        <input class="form-control me-sm-2" type="search" placeholder="Buscar">
-                        <button class="btn searchbutton my-2 my-sm-0" type="submit">Buscar</button>
+                        <input class="form-control me-sm-2" type="search" placeholder="Buscar...">
+                        <button class="btn button-custom my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
+    </header>
+    <main>
         <div class="muroAzul">
             <section class="text-center py-4">Alquileres Destacados</section>
         </div>
-    </header>
-    <main>
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-8">
@@ -179,7 +253,7 @@
         <div class="container my-5">
             <div class="row">
                 <aside class="col-md-4">
-                    <div class="card mt-1 border-primary">
+                    <div class="card mt-1 border-custom">
                         <div class="card-header">Aside Header</div>
                         <div class="card-body">
                             <h5 class="card-title">Aside title</h5>
@@ -198,7 +272,7 @@
                         </div>
                     </div>
                 </aside>
-                
+
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-12 col-md-6 mb-3">
@@ -245,9 +319,50 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container">
+            <iframe src="https://fd.formosa.gob.ar/mapa" width="100%" height="500px" frameborder="0"
+                class=" border-custom"></iframe>
+        </div>
+        <p></p>
     </main>
-    <footer>
+    <footer class=" bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav-footer">
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item">
+                                <a href="index.html" style="text-decoration: none;" class="custom-color-a">Inicio</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="productos.html" style="text-decoration: none;" class="custom-color-a">Sobre
+                                    Nosotros</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contact.html" style="text-decoration: none;"
+                                    class="custom-color-a">Contacto</a>
+                            </li>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="whatsapp custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="instagram custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="facebook custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-facebook"></i></a>
+                            </div>
+                        </ul>
+
+                    </nav>
+
+                    <div class="copyright-footer">
+                        <p class="copyright text-primary">
+                            &copy; Copyright
+                            <span class="text-primary">Blue Rental</span> All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
