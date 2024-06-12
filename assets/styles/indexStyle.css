@@ -6,17 +6,20 @@ body {
 .custom-bg {
     background-color: rgb(1, 30, 70);
 }
-
 .custom-bg:hover {
     background-color: rgb(4, 53, 121);
     transition: 0.9s;
 }
-
 .custom-bg:not(:hover) {
     background-color: rgb(1, 30, 70);
     transition: 0.9s;
 }
-
+.custom-bg2 {
+    background-color: rgb(176, 209, 255);
+}
+.custom-bg3{
+    background-color: rgb(4, 53, 121);;
+}
 
 .btn-outline-custom {
     border-color: #00265c;
@@ -114,12 +117,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    border: solid 1px black;
+    border: solid 1px rgb(1, 30, 70);
     padding: 10px;
     width: 300px;
     height: auto;
     margin: auto;
-    background-color: aliceblue;
+    background-color:  rgb(176, 209, 255);
 }
 
 .accessForm div {

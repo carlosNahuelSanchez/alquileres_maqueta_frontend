@@ -53,35 +53,37 @@
                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header custom-bg2">
                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Registro</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body custom-bg3">
                                     <div class="container">
                                         <form id="registerForm" class="accessForm">
-                                            <h2>Register you user</h2>
-
-                                            <input placeholder="username" type="text" name="username" />
-                                            <input placeholder="email" type="email" name="email" />
+                                            <h2>¡Registrate!</h2>
+                                            <label>Nombre/s:</label>
+                                            <input placeholder="Ingrese su nombre" type="text" name="username" class=" form-control mb-3" />
+                                            <label>Apellido/s:</label>
+                                            <input placeholder="Ingrese su Apellido" type="text" name="username" class=" form-control mb-3" />
+                                            <label>Correo Electronico:</label>
+                                            <input placeholder="example@gmail.com" type="email" name="email" class=" form-control mb-3" />
+                                            <label>Contraseña</label>
+                                            <input placeholder="Ingrese su contraseña" type="password" name="password" class=" form-control mb-3" />
+                                            <label>Repetir Contraseña</label>
+                                            <input placeholder="Repita su contraseña" type="password" name="confirm-password" class=" form-control mb-3"/>
+                                            <span id="error"> </span>
                                             <div>
                                                 <input type="checkbox" name="check" />
                                                 <span>Aceptar los terminos y condiciones</span>
                                             </div>
-
-                                            <input placeholder="password" type="password" name="password" />
-                                            <input placeholder="confirm password" type="password" name="confirm-password" />
-                                            <span id="error"> </span>
-
-                                            <button type="submit">Register</button>
+                                            <button type="submit" class="btn button-custom">Register</button>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                <div class="modal-footer custom-bg2">
+                                    <button type="button" class="btn btn-outline-custom"
+                                        data-bs-dismiss="modal">Salir</button>
                                 </div>
                             </div>
                         </div>
@@ -90,37 +92,6 @@
                         data-bs-target="#staticBackdrop2">
                         Inicio Sesión
                     </button>
-                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Inicio Sesión</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <form id="accessForm" class="accessForm">
-                                            <h2>Login</h2>
-
-                                            <input placeholder="username" type="text" name="username" />
-
-                                            <input placeholder="password" type="password" name="password" />
-
-                                            <button type="submit">Login</button>
-
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Salir</button>
-                                    <button type="button" class="btn btn-primary">Aceptar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <form class="d-flex me-5">
                         <input class="form-control me-sm-2" type="search" placeholder="Buscar...">
                         <button class="btn button-custom my-2 my-sm-0" type="submit">Buscar</button>
